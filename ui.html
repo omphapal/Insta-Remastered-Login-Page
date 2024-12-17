@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Enhanced Multi-Page Form</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      crossorigin="anonymous"
+    />
+ <link rel="stylesheet" href="ui.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <img
+          src="https://img.icons8.com/ios/100/ffffff/instagram-new.png"
+          alt="Logo"
+        />
+        <h2>Welcome!</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Form -->
+      <form id="form">
+        <div class="form-title">Sign Up</div>
+
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" />
+          <i class="fas fa-user"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+          <i class="fas fa-envelope"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" />
+          <i class="fas fa-lock"></i>
+          <i class="fas fa-check-circle success-icon"></i>
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <button type="submit">Submit</button>
+        <div class="switch-page">
+          Already have an account? <a href="#">Login here</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
